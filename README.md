@@ -43,4 +43,4 @@ npm install
 npm run dev
 ```
 
-You can now open the link in this terminal. If you are running this project for the first time, you will see a page with nothing except the title `Task` and the button <button>+ Add Task</button>
+You can now open the link in this terminal. If you are running this project for the first time, you will see a page with nothing except the title `Task` and the button `+ Add Task`
