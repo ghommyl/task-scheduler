@@ -1,12 +1,12 @@
 ## Description
 
-A very simple project using vue.js, tailwind and express.js. And it operates the database using mysql.
+A very simple project using vue.js, tailwind and express.js, and it operates the database using mysql.
 
 ![result](./pic/result.png)
 
 ## Requirements
 
-This project needs [MySQL]("https://www.mysql.com/") and [node.js](https://nodejs.org/) installed.
+This project needs [MySQL](https://www.mysql.com/) and [node.js](https://nodejs.org/) installed.
 
 ## How to run
 
@@ -36,7 +36,7 @@ Then, on both operating systems, run:
 npm start
 ```
 
-Then open a new terminal window, go to the project directory and run:
+Then start a new shell, go to the project directory and run:
 ```sh
 cd client
 npm install
