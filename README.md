@@ -1,6 +1,6 @@
 ## Description
 
-A very simple project using vue.js, tailwind and express.js, and it operates the database using mysql.
+A very simple project using vue.js, tailwind and express.js, and it operates the database using sqlite.
 
 ![result](./pic/result.png)
 
@@ -28,4 +28,5 @@ You can now open the link in this terminal. If you are running this project for 
 
 ## How to stop
 In the console running the vue.js dev server, input `q` and press `Enter` to stop it;
+
 In the console running the express.js server, press `Control`+`C` to stop it.
