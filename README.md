@@ -6,7 +6,7 @@ A very simple project using vue.js, tailwind and express.js, and it operates the
 
 ## Requirements
 
-This project needs [MySQL](https://www.mysql.com/) and [node.js](https://nodejs.org/) installed.
+This project needs [node.js](https://nodejs.org/) installed.
 
 ## How to run
 
@@ -14,25 +14,6 @@ This project needs [MySQL](https://www.mysql.com/) and [node.js](https://nodejs.
 # go to the project directory
 cd server
 npm install
-```
-
-Replace `YOUR_MYSQL_PASSWORD` to your MySQL root password in the following command.
-
-On Windows Powershell, run:
-
-```sh
-$env:MYSQL_PASSWORD='YOUR_MYSQL_PASSWORD'
-```
-
-On MacOS or Linux, run:
-
-```sh
-export MYSQL_PASSWORD="YOUR_MYSQL_PASSWORD"
-```
-
-Then, on both operating systems, run:
-
-```sh
 npm start
 ```
 
@@ -44,3 +25,7 @@ npm run dev
 ```
 
 You can now open the link in this terminal. If you are running this project for the first time, you will see a page with nothing except the title `Task` and the button `+ Add Task`
+
+## How to stop
+In the console running the vue.js dev server, input `q` and press `Enter` to stop it;
+In the console running the express.js server, press `Control`+`C` to stop it.
