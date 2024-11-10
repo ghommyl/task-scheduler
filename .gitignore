@@ -1,0 +1,6 @@
+client/.vscode/*
+!client/.vscode/extensions.json
+client/node_modules
+
+server/node_modules
+server/database.sqlite
