@@ -16,10 +16,17 @@ function getTasks(callback) {
   db.all("SELECT * FROM tasks", callback);
 }
 
-function updateTask(task, callback) {
+function updateTask(id, task, callback) {
+  var modify = [];
+  var processed = {};
+  for (var key in task) {
+    modify.push(key + ' = $' + key);
+    processed['$' + key] = task[key];
+  }
+  const query = 'UPDATE tasks SET ' + modify.join(', ') + ` WHERE id = ${id}`;
   db.run(
-    "UPDATE tasks SET title = $title, description = $description, end_date = $end_date, show_description = $show_description, show_end_date = $show_end_date WHERE id = $id",
-    task,
+    query,
+    processed,
     callback
   );
 }

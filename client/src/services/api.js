@@ -17,8 +17,8 @@ export function getTasks() {
     });
 }
 
-export function modifyTaskTo(updated) {
-  return axios.put("/api/update-task", updated).catch((err) => {
+export function modifyTaskTo(id, updated) {
+  return axios.put(`/api/update-task/${id}`, updated).catch((err) => {
     console.error(err);
   });
 }

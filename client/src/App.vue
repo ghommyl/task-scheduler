@@ -21,8 +21,8 @@ async function deleteTask(id) {
   }
 }
 
-async function modifyTask(updated) {
-  await modifyTaskTo(updated);
+async function modifyTask(id, updated) {
+  await modifyTaskTo(id, updated);
   await updateTasks();
 }
 

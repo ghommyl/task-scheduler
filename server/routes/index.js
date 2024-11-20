@@ -14,8 +14,8 @@ router.get("/get-tasks", (req, res) => {
   });
 });
 
-router.put("/update-task", (req, res) => {
-  dbModule.updateTask(req["body"], (err) => {
+router.put("/update-task/:id", (req, res) => {
+  dbModule.updateTask(req.params['id'], req["body"], (err) => {
     if (err) {
       res.status(500).send(err.message);
     } else {

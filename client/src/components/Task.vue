@@ -46,13 +46,12 @@ function startEdit() {
 
 function completeEdit() {
   editMode.value = false;
-  emit('modify', {
-    $id: props.id,
-    $title: titleEdit.value,
-    $description: descriptionEdit.value,
-    $end_date: document.getElementById('endDate').value,
-    $show_description: showDescriptionEdit.value,
-    $show_end_date: showEndDateEdit.value
+  emit('modify', props.id, {
+    title: titleEdit.value,
+    description: descriptionEdit.value,
+    end_date: document.getElementById('endDate').value,
+    show_description: showDescriptionEdit.value,
+    show_end_date: showEndDateEdit.value
   })
 }
 
