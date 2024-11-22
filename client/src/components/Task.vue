@@ -105,7 +105,8 @@ function focusDescription() {
           class="font-sans font-normal text-base text-gray-700 flex flex-row flex-wrap">
           <span>Ends at</span>
           <input type="datetime-local" id="endDate" :disabled="!showEndDateEdit"
-            class="outline-none pl-1 pr-1 rounded-md transition h-6 items-center border border-gray-400" :value="formatDate(endDate)">
+            class="outline-none pl-1 pr-1 rounded-md transition h-6 items-center border border-gray-400"
+            :value="formatDate(endDate)">
         </div>
       </div>
     </div>
@@ -132,9 +133,8 @@ function focusDescription() {
         <path
           d="M311.284,422.863c7.217,0,13.068-5.853,13.068-13.068V262.641c0-7.216-5.852-13.07-13.068-13.07c-7.219,0-13.07,5.854-13.07,13.07v147.154C298.213,417.012,304.067,422.863,311.284,422.863z" />
       </svg>
-      <svg @click="startEdit"
-        class="size-7 align-middle fill-gray-300 md:hover:fill-gray-400 transition cursor-pointer" viewBox="0 0 1024 1024"
-        version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <svg @click="startEdit" class="size-7 align-middle fill-gray-300 md:hover:fill-gray-400 transition cursor-pointer"
+        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <title>Edit</title>
         <path
           d="M834.3 705.7c0 82.2-66.8 149-149 149H325.9c-82.2 0-149-66.8-149-149V346.4c0-82.2 66.8-149 149-149h129.8v-42.7H325.9c-105.7 0-191.7 86-191.7 191.7v359.3c0 105.7 86 191.7 191.7 191.7h359.3c105.7 0 191.7-86 191.7-191.7V575.9h-42.7v129.8z" />

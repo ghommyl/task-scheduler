@@ -20,15 +20,11 @@ function updateTask(id, task, callback) {
   var modify = [];
   var processed = {};
   for (var key in task) {
-    modify.push(key + ' = $' + key);
-    processed['$' + key] = task[key];
+    modify.push(key + " = $" + key);
+    processed["$" + key] = task[key];
   }
-  const query = 'UPDATE tasks SET ' + modify.join(', ') + ` WHERE id = ${id}`;
-  db.run(
-    query,
-    processed,
-    callback
-  );
+  const query = "UPDATE tasks SET " + modify.join(", ") + ` WHERE id = ${id}`;
+  db.run(query, processed, callback);
 }
 
 function deleteTask(id, callback) {
